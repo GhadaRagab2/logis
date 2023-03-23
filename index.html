@@ -26,7 +26,7 @@
   <nav class="navbar navbar-expand-lg container">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="./assets/images/logo.png" alt="logis" width="30%" />
+        <img src="./assets/images/logo.png" alt="logis"  />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,8 @@
             <a class="nav-link" aria-current="page" href="#contact">تواصل معنا</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="https://logis.technology/"> English <i class="fa-solid fa-globe"></i></a>
+            <a class="nav-link" aria-current="page" href="https://logis.technology/"> English <i
+                class="fa-solid fa-globe"></i></a>
           </li>
         </ul>
       </div>
@@ -77,8 +78,10 @@
     <h2 class="services-title">خدماتنا</h2>
     <p class="services-description">
       لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
-
     </p>
+    <div class="container mx-auto py-5 text-center ">
+      <video class="intro-video" src="./assets/images/intro.mp4"  controls></video>
+    </div>
     <br>
     <br>
     <div class=" container">
@@ -129,30 +132,30 @@
           <h3 class="service-title">تواصل معنا </h3>
           <br>
           <div class="contact">
-            <form class="row g-3">
+            <form class="row g-3" id="form">
               <div class="col-12">
-                <label for="inputName" class="form-label" > الاسم </label>
-                <input type="text" class="form-control" id="inputName" placeholder=" " required>
+                <label for="inputName" class="form-label"> الاسم </label>
+                <input name="name" type="text" class="form-control" id="inputName" placeholder=" " required>
               </div>
               <div class="col-12">
-                <label for="phone" class="form-label" > رقم الهاتف </label>
-                  <input type="tel" id="typePhone" class="form-control" required />
+                <label for="phone" class="form-label"> رقم الهاتف </label>
+                <input name="tel" type="tel" id="typePhone" class="form-control" required />
               </div>
               <div class="col-12">
-                <label for="inputEmail" class="form-label" > البريد الإلكتروني </label>
-                <input type="email" class="form-control" id="inputEmail" placeholder=" " required>
+                <label for="inputEmail" class="form-label"> البريد الإلكتروني </label>
+                <input name="email"  type="email" class="form-control" id="inputEmail" placeholder=" " required>
               </div>
-           
-              
-              <div class="form-floating col-md-12">
-                <textarea  required class="form-control" placeholder="اكتب رسالتك..." id="floatingTextarea2" style="height: 100px"></textarea>
-                <label for="floatingTextarea2">اكتب رسالتك هنا ... </label>
+
+
+              <div class="col-12">
+                <textarea name="message"  required class="form-control" placeholder="اكتب رسالتك هنا ..." id="Textarea"
+                  style="height: 100px"></textarea>
               </div>
               <div class="col-12">
-                <button type="submit" class="btn btn-primary">إرسال</button>
+                <button type="submit"  class="btn btn-primary">إرسال</button>
               </div>
             </form>
-            
+
           </div>
           <!-- <button class="button orange-button">Learn More</button> -->
         </div>
@@ -168,7 +171,7 @@
       <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 site-info">
         <img src="./assets/images/logo-white.png" alt="logo-white" class="logo-white">
         <p class="site-title"> لوجيس تيكنولوجي</p>
-        <p class="site-title" > لوريم ايبسوم دولار </p>
+        <p class="site-title"> لوريم ايبسوم دولار </p>
         <span class="social-medias">
           <!--  <a href="#" target="_blank">
                      <img class="social-item" src="./assets/icons/facebook.png" alt="facebook">
@@ -200,7 +203,7 @@
             <i class="fa-solid fa-location-dot"></i>
           </div>
           <div class="col-10 footer-link">
-            696 شارع الحرية, الرمل,الدور  التاسع, مكانك  P1, الأسكندرية, مصر
+            696 شارع الحرية, الرمل,الدور التاسع, مكانك P1, الأسكندرية, مصر
           </div>
         </div>
         <br>
@@ -218,7 +221,7 @@
             <i class="fa-solid fa-phone-flip"></i>
           </div>
           <div class="col-10">
-           +20 876580-2132435
+            +20 876580-2132435
           </div>
         </div>
         <br>
@@ -234,6 +237,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
     integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- link js file -->
+  <script src="./assets/js/javascript.js"></script>
+
+
+ 
 </body>
 
 </html>
