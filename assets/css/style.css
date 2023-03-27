@@ -305,6 +305,9 @@ header {
 /* responsive */
 
 @media screen and (max-width:768px) {
+    .navbar-expand-lg .navbar-nav .nav-link{
+        font-size: 18px;
+    }
     .intro-video {
         width: 95%;
     }
