@@ -5,10 +5,6 @@ body {
     font-family: "Tajawal", sans-serif;
 }
 
-img {
-    width: 100%;
-}
-
 .intro-video {
     height: 300px;
     width: 75%;
@@ -69,16 +65,10 @@ img {
 .banner-0-sub-title {
     color: #FF3F00;
 }
-.banner-0-description {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 0px;
-    text-align: right;
-    width: 80%;
-}
 
 header {
+    background-color: #fff7f5;
+    padding: 1rem 0;
     background-image: url('../images/banner-0.png');
     background-position: left;
     background-repeat: no-repeat;
@@ -86,6 +76,16 @@ header {
     height: 508px;
     width: 100%;
     margin: 0!important;
+}
+
+.banner-0-description {
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: right;
+    width: 80%;
 }
 
 .button {
@@ -125,7 +125,7 @@ header {
 .services,
 .growing {
     margin-top: 30px;
-    padding: 20px 0px;
+    padding: 20px 60px;
 }
 
 .services-title,
@@ -160,7 +160,7 @@ header {
 
 .service {
     margin-top: 80px;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .service-title {
@@ -180,7 +180,7 @@ header {
     line-height: 140%;
     display: flex;
     align-items: center;
-    color: #272525;
+    color: #565454;
     mix-blend-mode: normal;
 }
 
@@ -229,7 +229,7 @@ header {
 .footer {
     /* min-height: 240px; */
     background-color: #FF3F00;
-    padding: 20px;
+    padding: 0;
 }
 
 .site-info {
@@ -239,7 +239,7 @@ header {
 .logo-white {
     width: unset;
     height: 50px !important;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .site-title {
@@ -281,7 +281,7 @@ header {
 
 .footer-title {
     color: #fff;
-    font-size: 20px;
+    font-size: 10px 0;
 }
 
 .footer-link {
@@ -303,11 +303,8 @@ header {
 /* responsive */
 
 @media screen and (max-width:768px) {
-    .navbar-expand-lg .navbar-nav .nav-link{
-        font-size: 18px;
-    }
-    .banner-0-title{
-        font-size: 35px;
+    img {
+        width: 100%;
     }
     .intro-video {
         width: 95%;
@@ -324,6 +321,7 @@ header {
     }
     header {
         background-image: none;
+        height: unset;
     }
     .mobile-image {
         display: block;
