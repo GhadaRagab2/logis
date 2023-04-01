@@ -79,7 +79,7 @@ header {
 }
 
 .banner-0-description {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 22px;
     font-weight: 400;
     line-height: 35px;
@@ -130,7 +130,6 @@ header {
 
 .services-title,
 .growing-title {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -142,14 +141,14 @@ header {
 
 .services-description,
 .growing-description {
-    font-family: 'Roboto';
+    /*  */
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 140%;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #323232;
+    color: #181818;
     text-align: center;
     margin: 0 15%;
 }
@@ -164,7 +163,7 @@ header {
 }
 
 .service-title {
-    font-family: 'Roboto';
+    /*  */
     font-style: normal;
     font-weight: 600;
     font-size: 34px;
@@ -173,14 +172,13 @@ header {
 }
 
 .service-description {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 140%;
     display: flex;
     align-items: center;
-    color: #565454;
+    color: #000;
     mix-blend-mode: normal;
 }
 
@@ -192,7 +190,6 @@ header {
 }
 
 .card-value {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
     font-size: 34px;
@@ -202,7 +199,6 @@ header {
 }
 
 .card-desc {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -265,7 +261,6 @@ header {
 /* contact us */
 
 .contact {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
