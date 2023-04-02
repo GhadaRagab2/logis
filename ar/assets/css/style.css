@@ -23,11 +23,28 @@ body {
 /* start navigation style */
 
 .navbar {
-    padding-block: 2rem !important;
+    height: 128px;
+    padding-block: 35px !important;
 }
 
 .navbar-brand img {
-    width: 65% !important;
+    padding: 0 !important;
+    /* width: 65% !important; */
+    height: 60px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+@media screen and (min-width:1200px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 1170px !important;
+    }
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.active {
@@ -67,7 +84,7 @@ body {
 }
 
 header {
-    background-color: #fff7f5;
+    /* background-color: #fff7f5; */
     padding: 1rem 0;
     background-image: url('../images/banner-0.png');
     background-position: left;
@@ -79,7 +96,7 @@ header {
 }
 
 .banner-0-description {
-    /* font-family: Roboto; */
+    font-family: Roboto;
     font-size: 22px;
     font-weight: 400;
     line-height: 35px;
@@ -130,6 +147,7 @@ header {
 
 .services-title,
 .growing-title {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -141,14 +159,14 @@ header {
 
 .services-description,
 .growing-description {
-    /*  */
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 140%;
     text-align: center;
     letter-spacing: 0.2px;
-    color: #181818;
+    color: #323232;
     text-align: center;
     margin: 0 15%;
 }
@@ -163,7 +181,7 @@ header {
 }
 
 .service-title {
-    /*  */
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
     font-size: 34px;
@@ -172,13 +190,14 @@ header {
 }
 
 .service-description {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 140%;
     display: flex;
     align-items: center;
-    color: #000;
+    color: #565454;
     mix-blend-mode: normal;
 }
 
@@ -190,6 +209,7 @@ header {
 }
 
 .card-value {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
     font-size: 34px;
@@ -199,6 +219,7 @@ header {
 }
 
 .card-desc {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -261,6 +282,7 @@ header {
 /* contact us */
 
 .contact {
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
