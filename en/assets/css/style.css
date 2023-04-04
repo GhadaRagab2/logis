@@ -1,13 +1,8 @@
 /* general */
 
-@import url("https://fonts.googleapis.com/css?family=Tajawal");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
-    font-family: "Tajawal", sans-serif;
-}
-
-.intro-video {
-    height: 300px;
-    width: 75%;
+    font-family: "Roboto", Arial, sans-serif !important;
 }
 
 .container {
@@ -19,32 +14,26 @@ body {
     border: #ff3f00 !important;
 }
 
-
-/* start navigation style */
-
-.navbar {
-    height: 128px;
-    padding-block: 35px !important;
-}
-
-.navbar-brand img {
-    padding: 0 !important;
-    /* width: 65% !important; */
-    height: 60px;
-}
-
-.container-fluid {
-    padding: 0;
-}
-
 @media screen and (min-width:1200px) {
     .container,
     .container-lg,
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 1170px !important;
+        max-width: 1240px !important;
     }
+}
+
+
+/* start navigation style */
+
+.navbar {
+    padding-block: 2rem !important;
+}
+
+.navbar-brand img {
+    height: 60px;
+    /* width: 65% !important; */
 }
 
 .navbar-expand-lg .navbar-nav .nav-link.active {
@@ -58,9 +47,9 @@ body {
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-inline: 1.5rem !important;
-    font-size: 20px;
+    font-size: 22px;
     color: #1A0033;
-    font-weight: 600;
+    font-weight: 500;
     background: transparent!important;
 }
 
@@ -87,7 +76,7 @@ header {
     /* background-color: #fff7f5; */
     padding: 1rem 0;
     background-image: url('../images/banner-0.png');
-    background-position: left;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
     height: 508px;
@@ -96,12 +85,12 @@ header {
 }
 
 .banner-0-description {
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 22px;
     font-weight: 400;
     line-height: 35px;
     letter-spacing: 0px;
-    text-align: right;
+    text-align: left;
     width: 80%;
 }
 
@@ -109,7 +98,7 @@ header {
     height: 48px;
     width: 184px;
     border-radius: 5px;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 22px;
     font-weight: 600;
     line-height: 23px;
@@ -142,7 +131,12 @@ header {
 .services,
 .growing {
     margin-top: 30px;
-    padding: 20px 60px;
+    padding: 20px 0px;
+}
+
+.intro-video {
+    height: 300px;
+    width: 75%;
 }
 
 .services-title,
@@ -177,7 +171,7 @@ header {
 
 .service {
     margin-top: 80px;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 .service-title {
@@ -197,7 +191,7 @@ header {
     line-height: 140%;
     display: flex;
     align-items: center;
-    color: #565454;
+    color: #272525;
     mix-blend-mode: normal;
 }
 
@@ -246,11 +240,11 @@ header {
 .footer {
     /* min-height: 240px; */
     background-color: #FF3F00;
-    padding: 0;
+    padding: 10px 0;
 }
 
 .site-info {
-    padding: 10px 10px 10px 60px!important;
+    /* padding: 10px 10px 10px 60px!important; */
 }
 
 .logo-white {
@@ -298,7 +292,7 @@ header {
 
 .footer-title {
     color: #fff;
-    font-size: 10px 0;
+    font-size: 20px;
 }
 
 .footer-link {
@@ -320,21 +314,25 @@ header {
 /* responsive */
 
 @media screen and (max-width:768px) {
-    img {
+    .services-img {
         width: 100%;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        font-size: 18px;
     }
     .intro-video {
         width: 95%;
-    }
-    h3,
-    p {
-        text-align: center;
     }
     .navbar-brand {
         width: 75% !important;
     }
     .navbar-brand img {
+        /* height: 65px; */
         width: 75% !important;
+    }
+    h3,
+    p {
+        text-align: center;
     }
     header {
         background-image: none;
@@ -343,7 +341,9 @@ header {
     .mobile-image {
         display: block;
     }
-    .services,
+    .banner-0-title {
+        font-size: 35px;
+    }
     .growing {
         padding: 20px 0;
     }
