@@ -312,7 +312,7 @@
             height: unset;
         }
         h3,
-        p {
+        .services-description {
             text-align: center;
         }
         .navbar-brand {
@@ -323,11 +323,14 @@
             height: unset;
         }
         header {
-            background-image: none;
+            background-image: none !important;
             height: unset;
         }
         .mobile-image {
             display: block;
+        }
+        .banner-0-title {
+            font-size: 45px;
         }
         .services,
         .growing {
