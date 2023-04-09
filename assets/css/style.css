@@ -1,351 +1,336 @@
-/* general */
-
-@import url("https://fonts.googleapis.com/css?family=Cairo");
-body {
-    font-family: "Cairo", sans-serif;
-}
-
-.intro-video {
-    height: 300px;
-    width: 75%;
-}
-
-.container {
-    margin-inline: auto !important;
-}
-
-.btn-primary {
-    background-color: #FF3F00 !important;
-    border: #ff3f00 !important;
-}
-
-
-/* start navigation style */
-
-.navbar {
-    padding-block: 35px !important;
-}
-
-.navbar-brand img {
-    padding: 0 !important;
-    /* width: 65% !important; */
-    height: 60px;
-}
-
-.container-fluid {
-    padding: 0;
-}
-
-@media screen and (min-width:1200px) {
-    .container,
-    .container-lg,
-    .container-md,
-    .container-sm,
-    .container-xl {
-        max-width: 1170px !important;
+    /* general */
+    
+    @import url("https://fonts.googleapis.com/css?family=Cairo");
+    /* body {
+        font-family: "Cairo", sans-serif;
     }
-}
-
-.navbar-expand-lg .navbar-nav .nav-link.active {
-    color: #FF3F00 !important;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link:focus,
-.navbar-expand-lg .navbar-nav .nav-link:hover {
-    color: rgba(255, 64, 0, 0.522)!important;
-}
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-inline: 1.5rem !important;
-    font-size: 20px;
-    color: #1A0033;
-    font-weight: 600;
-    background: transparent!important;
-}
-
-
-/* end navigation style */
-
-
-/* start header style */
-
-.mobile-image {
-    display: none;
-}
-
-.banner-0-title {
-    font-size: 50px;
-    font-weight: 700;
-}
-
-.banner-0-sub-title {
-    color: #FF3F00;
-}
-
-header {
-    /* background-color: #fff7f5; */
-    padding: 1rem 0;
-    background-image: url('../images/banner-0.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 508px;
-    width: 100%;
-    margin: 0!important;
-}
-
-.banner-0-description {
-    font-family: Cairo;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 0px;
-    text-align: right;
-    width: 80%;
-}
-
-.button {
-    height: 48px;
-    width: 184px;
-    border-radius: 5px;
-    font-family: Cairo;
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 23px;
-    letter-spacing: 0px;
-    text-align: center;
-}
-
-.orange-button {
-    color: #fff;
-    background-color: #FF3F00;
-    border: 1px solid #FF3F00;
-    margin: 20px 10px 20px 0;
-}
-
-.white-button {
-    border: 1px solid #FF3F00;
-    background-color: #fff;
-    color: #FF3F00;
-    margin: 20px 10px 20px 10px;
-}
-
-.brands {
-    padding: 20px 10%;
-}
-
-.brand-image {
-    height: 40px;
-}
-
-.services,
-.growing {
-    margin-top: 30px;
-    padding: 20px 60px;
-}
-
-.services-title,
-.growing-title {
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 125%;
-    letter-spacing: 0.2px;
-    color: #1A0033;
-    text-align: center;
-}
-
-.services-description,
-.growing-description {
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 140%;
-    text-align: center;
-    letter-spacing: 0.2px;
-    color: #323232;
-    text-align: center;
-    margin: 0 15%;
-}
-
-.services-img {
-    max-height: 300px;
-}
-
-.service {
-    margin-top: 80px;
-    padding: 20px 0;
-}
-
-.service-title {
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 125%;
-    color: #1A0033;
-}
-
-.service-description {
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 140%;
-    display: flex;
-    align-items: center;
-    color: #565454;
-    mix-blend-mode: normal;
-}
-
-.growing-card {
-    background: #F9F9F9;
-    box-shadow: 0px 16px 22px rgba(0, 0, 0, 0.11);
-    border-radius: 5px;
-    padding: 20px;
-}
-
-.card-value {
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 46px;
-    text-align: center;
-    color: #FF3F00;
-}
-
-.card-desc {
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 29px;
-    text-align: center;
-    color: #1A0033;
-}
-
-.growing-cards {
-    margin: 40px 20px;
-}
-
-.video-box {
-    height: 720px;
-    padding: 0 60px;
-    margin-bottom: 80px;
-    margin-top: 30px;
-}
-
-.i-frame {
-    width: 100%
-}
-
-.footer {
-    /* min-height: 240px; */
-    background-color: #FF3F00;
-    padding: 0;
-}
-
-.site-info {
-    padding: 10px 10px 10px 60px!important;
-}
-
-.logo-white {
-    width: unset;
-    height: 50px !important;
-    /* margin-bottom: 20px; */
-}
-
-.site-title {
-    color: #fff;
-    font-size: 18px;
-}
-
-.social-medias {
-    display: flex;
-}
-
-.social-item {
-    height: 50px;
-    width: 50px;
-    margin-left: -10px;
-}
-
-.about-us {
-    text-align: center
-}
-
-
-/* contact us */
-
-.contact {
-    font-family: 'Cairo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 140%;
-    align-items: center;
-    color: #565454;
-    mix-blend-mode: normal;
-}
-
-.contact .col-1 {
-    color: #FF3F00 !important;
-}
-
-.footer-title {
-    color: #fff;
-    font-size: 10px 0;
-}
-
-.footer-link {
-    color: #fff;
-    width: 100%;
-    display: block;
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-.footer-info {
-    margin-top: 20px;
-}
-
-
-/* end header style */
-
-
-/* responsive */
-
-@media screen and (max-width:768px) {
-    img {
-        width: 100%;
-    }
+     */
+    
     .intro-video {
-        width: 98%;
-        height: unset;
+        height: 300px;
+        width: 75%;
     }
-    h3,
-    p {
+    
+    .container {
+        margin-inline: auto !important;
+    }
+    
+    .btn-primary {
+        background-color: #FF3F00 !important;
+        border: #ff3f00 !important;
+    }
+    /* start navigation style */
+    
+    .navbar {
+        padding-block: 35px !important;
+    }
+    
+    .navbar-brand img {
+        padding: 0 !important;
+        /* width: 65% !important; */
+        height: 60px;
+    }
+    
+    .container-fluid {
+        padding: 0;
+    }
+    
+    @media screen and (min-width:1200px) {
+        .container,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container-xl {
+            max-width: 1170px !important;
+        }
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-link.active {
+        color: #FF3F00 !important;
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-link:focus,
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: rgba(255, 64, 0, 0.522)!important;
+    }
+    
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-inline: 1.5rem !important;
+        /* font-size: 20px; */
+        color: #1A0033;
+        /* font-weight: 600; */
+        background: transparent!important;
+    }
+    /* end navigation style */
+    /* start header style */
+    
+    .mobile-image {
+        display: none;
+    }
+    
+    .banner-0-title {
+        font-size: 50px;
+        font-weight: 700;
+    }
+    
+    .banner-0-sub-title {
+        color: #FF3F00;
+    }
+    
+    #header {
+        /* background-color: #fff7f5; */
+        padding: 1rem 0;
+        background-image: url('../images/banner-0.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 508px;
+        width: 100%;
+        margin: 0!important;
+    }
+    /* #header * {
+        transform: scaleX(-1);
+    } */
+    
+    .banner-0-description {
+        /* font-family: Cairo; */
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 35px;
+        letter-spacing: 0px;
+        /* text-align: right; */
+        width: 80%;
+    }
+    
+    .button {
+        height: 48px;
+        width: 184px;
+        border-radius: 5px;
+        /* font-family: Cairo; */
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 23px;
+        letter-spacing: 0px;
         text-align: center;
     }
-    .navbar-brand {
-        width: 75% !important;
+    
+    .orange-button {
+        color: #fff;
+        background-color: #FF3F00;
+        border: 1px solid #FF3F00;
+        margin: 20px 10px 20px 0;
     }
-    .navbar-brand img {
-        width: 75% !important;
-        height: unset;
+    
+    .white-button {
+        border: 1px solid #FF3F00;
+        background-color: #fff;
+        color: #FF3F00;
+        margin: 20px 10px 20px 10px;
     }
-    header {
-        background-image: none;
-        height: unset;
+    
+    .brands {
+        padding: 20px 10%;
     }
-    .mobile-image {
-        display: block;
+    
+    .brand-image {
+        height: 40px;
     }
+    
     .services,
     .growing {
+        margin-top: 30px;
+        padding: 20px 60px;
+    }
+    
+    .services-title,
+    .growing-title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 125%;
+        letter-spacing: 0.2px;
+        color: #1A0033;
+        text-align: center;
+    }
+    
+    .services-description,
+    .growing-description {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 140%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #323232;
+        text-align: center;
+        margin: 0 15%;
+    }
+    
+    .services-img {
+        max-height: 300px;
+    }
+    
+    .service {
+        margin-top: 80px;
         padding: 20px 0;
     }
-}
+    
+    .service-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 125%;
+        color: #1A0033;
+    }
+    
+    .service-description {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        color: #565454;
+        mix-blend-mode: normal;
+    }
+    
+    .growing-card {
+        background: #F9F9F9;
+        box-shadow: 0px 16px 22px rgba(0, 0, 0, 0.11);
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .card-value {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 46px;
+        text-align: center;
+        color: #FF3F00;
+    }
+    
+    .card-desc {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 29px;
+        text-align: center;
+        color: #1A0033;
+    }
+    
+    .growing-cards {
+        margin: 40px 20px;
+    }
+    
+    .video-box {
+        height: 720px;
+        padding: 0 60px;
+        margin-bottom: 80px;
+        margin-top: 30px;
+    }
+    
+    .i-frame {
+        width: 100%
+    }
+    
+    .footer {
+        /* min-height: 240px; */
+        background-color: #FF3F00;
+        padding: 0;
+    }
+    
+    .site-info {
+        padding: 10px 10px 10px 60px!important;
+    }
+    
+    .logo-white {
+        width: unset;
+        height: 50px !important;
+        /* margin-bottom: 20px; */
+    }
+    
+    .site-title {
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    .social-medias {
+        display: flex;
+    }
+    
+    .social-item {
+        height: 50px;
+        width: 50px;
+        margin-left: -10px;
+    }
+    
+    .about-us {
+        text-align: center
+    }
+    /* contact us */
+    
+    .contact {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 140%;
+        align-items: center;
+        color: #565454;
+        mix-blend-mode: normal;
+    }
+    
+    .contact .col-1 {
+        color: #FF3F00 !important;
+    }
+    
+    .footer-title {
+        color: #fff;
+        font-size: 10px 0;
+    }
+    
+    .footer-link {
+        color: #fff;
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    
+    .footer-info {
+        margin-top: 20px;
+    }
+    /* end header style */
+    /* responsive */
+    
+    @media screen and (max-width:768px) {
+        img {
+            width: 100%;
+        }
+        .intro-video {
+            width: 98%;
+            height: unset;
+        }
+        h3,
+        p {
+            text-align: center;
+        }
+        .navbar-brand {
+            width: 75% !important;
+        }
+        .navbar-brand img {
+            width: 75% !important;
+            height: unset;
+        }
+        header {
+            background-image: none;
+            height: unset;
+        }
+        .mobile-image {
+            display: block;
+        }
+        .services,
+        .growing {
+            padding: 20px 0;
+        }
+    }

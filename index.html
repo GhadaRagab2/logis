@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="" dir="">
 
 <head>
     <meta charset="UTF-8" />
@@ -8,11 +8,12 @@
     <link rel="icon" href="./assets/images/logo-small.png" type="image/icon type" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <title>لوجيس</title>
+    <title data-i18n="title">لوجيس</title>
     <link href="./assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
     <!-- seo  -->
     <meta property="og:site_name" content=" Logis Technology لوجيس تيكنولوجي" />
     <meta property="og:image" content="./assets/images/meta-img.jpg" />
@@ -23,10 +24,9 @@
     <link rel="canonical" href="https://logis.technology/" />
     <meta name="title" content=" Logis Technology" />
     <meta name="description" content="write website description here" />
-
 </head>
 
-<body>
+<body id="body">
     <!-- navigation bar -->
     <nav class="navbar navbar-expand-lg container">
         <div class="container-fluid">
@@ -37,208 +37,279 @@
           <span class="navbar-toggler-icon"></span>
         </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav  mb-2 mb-lg-0" id="navUl">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">الرئيسية</a
+                        <a data-i18n="home" class="nav-link active" id="nav-link" aria-current="page" href="./index.html">الرئيسية</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#services"
+              <a data-i18n="service" class="nav-link" id="nav-link" aria-current="page" href="#services"
                 >الخدمات
               </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#contact">تواصل معنا</a
+                        <a data-i18n="contact" class="nav-link" id="nav-link" aria-current="page" href="#contact">تواصل معنا</a
               >
             </li>
+              <!-- <li class="nav-item ">
+              <div class="nav-link" id="nav-link" style="padding-inline: 0 !important; color: #ff400085;">
+               <i class="fa-solid fa-globe"></i>
+              </div>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="./en/index.html">
-                English <i class="fa-solid fa-globe"></i
-              ></a>
-                    </li>
-                </ul>
-            </div>
+              <select class="nav-link" id="nav-link" style="outline: none; border: none; padding-inline: 0 !important;">
+                <option value="en" data-i18n="english" >English</option>
+                <option value="ar" data-i18n="arabic" >Arabic</option>
+              </select>
+            </li>
+          
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- end  navigation bar -->
 
     <!-- start header  -->
-    <header class="py-5">
-        <div class="row container">
-            <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-                <h1 class="banner-0-title">لوجيس تيكنولوجي</h1>
-                <h2 class="banner-0-title banner-0-sub-title py-3">
-                    لوريم ايبسوم دولار
-                </h2>
-                <p class="banner-0-description">
-                    لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
-                </p>
-            </div>
+    <header class="py-5" id="header">
+      <div class="row container" id="innerHeader">
+        <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+          <h1 class="banner-0-title" data-i18n="titleBanner" >لوجيس تيكنولوجي</h1>
+          <h2 class="banner-0-title banner-0-sub-title py-3" data-i18n="subtitleBanner">
+            لوريم ايبسوم دولار
+          </h2>
+          <p class="banner-0-description"  data-i18n="bannerdescription">
+            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو
+            أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت
+            انيم أد مينيم فينايم,كيواس نوستريد
+          </p>
         </div>
+      </div>
     </header>
 
     <div class="mobile-image py-5">
-        <img src="./assets/images/banner-0.png" alt="" width="100%" />
+      <img src="./assets/images/banner-0.png" alt="" width="100%" />
     </div>
     <!-- end header  -->
     <div class="services" id="services">
-        <div class="container mx-auto  text-center">
-            <video class="intro-video" src="./assets/images/intro.mp4" controls poster=""></video>
+      <div class="container mx-auto text-center">
+        <video
+        id="servicesVideo"
+          class="intro-video"
+          src="./assets/images/intro.mp4"
+          controls
+          poster="./assets/images/cover.jpg"
+        ></video>
+      </div>
+      <h2 class="services-title pt-5" data-i18n="ourServices">خدماتنا</h2>
+      <p class="services-description" data-i18n="servicesDescription">
+        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو
+        أيوسمود تيمبور
+      </p>
+
+      <br />
+      <br />
+      <div class="container">
+        <div class="row service justify-content-between py-5" id="consulting">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img
+              src="./assets/images/consulting.png"
+              alt="consulting"
+              class="services-img"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h3 class="service-title pt-3" data-i18n="ConsultingTitle">الإستشارة</h3>
+            <p class="service-description" data-i18n="ConsultingDescription">
+              لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت
+              دو أيوسمود تيمبور
+            </p>
+            <!-- <button class="button orange-button">Learn More</button> -->
+          </div>
         </div>
-        <h2 class="services-title pt-5">خدماتنا</h2>
-        <p class="services-description">
-            لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
-        </p>
-
-        <br />
-        <br />
-        <div class="container">
-
-            <div class="row service justify-content-between py-5" id="consulting">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img src="./assets/images/consulting.png" alt="consulting" class="services-img" />
+        <div
+          class="row service justify-content-between py-5"
+          id="implementation"
+        >
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h3 class="service-title" data-i18n="implementationTitle">التنفيذ</h3>
+            <p class="service-description" data-i18n="implementationDescription" >
+              لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت
+              دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا .
+              يوت انيم أد مينيم فينايم,كيواس نوستريد
+            </p>
+            <!-- <button class="button orange-button">Learn More</button> -->
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img
+              src="./assets/images/implementation.png"
+              alt="implementation"
+              class="services-img"
+            />
+          </div>
+        </div>
+        <div
+          class="row service justify-content-between py-5"
+          id="operations-maintenance"
+        >
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <img
+              src="./assets/images/operations.png"
+              alt="operations"
+              class="services-img"
+            />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-5">
+            <h3 class="service-title" data-i18n="operationsTitle">العمليات والصيانة</h3>
+            <p class="service-description" data-i18n="operationsDescription">
+              لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت
+              دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا .
+              يوت انيم أد مينيم فينايم,كيواس نوستريد
+            </p>
+            <!-- <button class="button orange-button">Learn More</button> -->
+          </div>
+        </div>
+        <div class="row service justify-content-center py-5" id="contact">
+          <div class="col-lg-10 col-md-6 col-sm-12 col-xs-12">
+            <h3 class="service-title text-center" data-i18n="contactSectionTitle">تواصل معنا</h3>
+            <div class="contact">
+              <form
+                class="row g-3"
+                id="form"
+                action="https://formspree.io/f/xpzeynkq"
+                method="post"
+              >
+                <div class="col-12">
+                  <label for="inputName" class="form-label" data-i18n="contactName"> الاسم </label>
+                  <input
+                    name="name"
+                    type="text"
+                    class="form-control"
+                    id="inputName"
+                    placeholder=" "
+                    required
+                  />
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h3 class="service-title pt-3">الإستشارة</h3>
-                    <p class="service-description">
-                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
-                    </p>
-                    <!-- <button class="button orange-button">Learn More</button> -->
+                <div class="col-12">
+                  <label for="phone" class="form-label" data-i18n="contactPhone"> رقم الهاتف </label>
+                  <input
+                    name="tel"
+                    type="tel"
+                    id="typePhone"
+                    class="form-control"
+                    required
+                  />
                 </div>
-            </div>
-            <div class="row service justify-content-between py-5" id="implementation">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <h3 class="service-title">التنفيذ</h3>
-                    <p class="service-description">
-                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
-                    </p>
-                    <!-- <button class="button orange-button">Learn More</button> -->
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                    <img src="./assets/images/implementation.png" alt="implementation" class="services-img" />
-                </div>
-            </div>
-            <div class="row service justify-content-between py-5" id="operations-maintenance">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img src="./assets/images/operations.png" alt="operations" class="services-img" />
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-5">
-                    <h3 class="service-title">العمليات والصيانة</h3>
-                    <p class="service-description">
-                        لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
-                    </p>
-                    <!-- <button class="button orange-button">Learn More</button> -->
-                </div>
-            </div>
-            <div class="row service justify-content-center py-5" id="contact">
-                <div class="col-lg-10 col-md-6 col-sm-12 col-xs-12">
-                    <h3 class="service-title text-center"> تواصل معنا </h3>
-                    <div class="contact">
-                        <form class="row g-3" id="form" action="https://formspree.io/f/xpzeynkq" method="post">
-                            <div class="col-12">
-                                <label for="inputName" class="form-label"> الاسم </label>
-                                <input name="name" type="text" class="form-control" id="inputName" placeholder=" " required />
-                            </div>
-                            <div class="col-12">
-                                <label for="phone" class="form-label"> رقم الهاتف </label>
-                                <input name="tel" type="tel" id="typePhone" class="form-control" required />
-                            </div>
-                            <div class="col-12">
-                                <label for="inputEmail" class="form-label">
+                <div class="col-12">
+                  <label for="inputEmail" class="form-label" data-i18n="contactEmail">
                     البريد الإلكتروني
                   </label>
-                                <input name="email" type="email" class="form-control" id="inputEmail" placeholder=" " required />
-                            </div>
-
-                            <div class="col-12">
-                                <textarea name="message" required class="form-control" placeholder="اكتب رسالتك هنا ..." id="Textarea" style="height: 100px"></textarea>
-                            </div>
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary">إرسال</button>
-                            </div>
-                        </form>
-                    </div>
-                    <!-- <button class="button orange-button">Learn More</button> -->
+                  <input
+                    name="email"
+                    type="email"
+                    class="form-control"
+                    id="inputEmail"
+                    placeholder=" "
+                    required
+                  />
                 </div>
-                <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-5 ">
+
+                <div class="col-12">
+                  <textarea
+                  data-i18n="contactMessage"
+                    name="message"
+                    required
+                    class="form-control"
+                    placeholder="اكتب رسالتك هنا ..."
+                    id="Textarea"
+                    style="height: 100px"
+                  ></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary" data-i18n="contactSend">إرسال</button>
+                </div>
+              </form>
+            </div>
+            <!-- <button class="button orange-button">Learn More</button> -->
+          </div>
+          <!-- <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-5 ">
                     <img src="./assets/images/consulting.png" alt="contact" class="services-img" />
                 </div> -->
-            </div>
         </div>
+      </div>
     </div>
 
     <footer class="footer">
-        <div class="row justify-content-between mx-auto align-items-center">
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 site-info">
-                <img src="./assets/images/logo-white.png" alt="logo-white" class="logo-white" />
-            </div>
+      <div class="row justify-content-between mx-auto align-items-center">
+        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 site-info">
+          <img
+            src="./assets/images/logo-white.png"
+            alt="logo-white"
+            class="logo-white"
+          />
+        </div>
 
-            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footer-info" id="contact-us">
-                <div class="row">
-                    <div class="col-1 footer-link">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div class="col-10 footer-link">
-                        696 شارع الحرية, الرمل,الدور التاسع, الأسكندرية, مصر
-                    </div>
-                </div>
+        <div
+          class="col-lg-4 col-md-6 col-sm-6 col-xs-12 footer-info"
+          id="contact-us"
+        >
+          <div class="row">
+            <div class="col-1 footer-link">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="col-10 footer-link" data-i18n="footerAdress">
+              696 شارع الحرية, الرمل,الدور التاسع, الأسكندرية, مصر
+            </div>
+          </div>
 
-                <!-- <p class="footer-link">+20-03-5869930</p> -->
+          <!-- <p class="footer-link">+20-03-5869930</p> -->
+        </div>
+        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 footer-info">
+          <div class="row footer-link">
+            <div class="col-1">
+              <i class="fa-solid fa-envelope"></i>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12 footer-info">
-                <div class="row footer-link">
-                    <div class="col-1">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div class="col-10">info@logis.technology</div>
-                </div>
-                <!-- <p class="footer-link">+20-03-5869930</p> -->
+            <div class="col-10">info@logis.technology</div>
+          </div>
+          <!-- <p class="footer-link">+20-03-5869930</p> -->
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer-info">
+          <div class="row footer-link">
+            <div class="col-1">
+              <i class="fa-solid fa-phone"></i>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 footer-info">
-                <div class="row footer-link">
-                    <div class="col-1">
-                        <i class="fa-solid fa-phone-flip"></i>
-                    </div>
-                    <div class="col-10" dir="">876580-2132435 20+</div>
-                </div>
-                <!-- <p class="footer-link">+20-03-5869930</p> -->
-            </div>
-            <div class="col-lg-1 col-md-6 col-sm-6 col-xs-12 footer-info">
-                <div class="row footer-link">
-                    <span class="social-medias">
+            <div class="col-10" data-i18n="footerPhone">876580-2132435 20+</div>
+          </div>
+          <!-- <p class="footer-link">+20-03-5869930</p> -->
+        </div>
+        <div class="col-lg-1 col-md-6 col-sm-6 col-xs-12 footer-info">
+          <div class="row footer-link">
+            <span class="social-medias">
               <!-- <a href="#" target="_blank">
                      <img class="social-item" src="./assets/icons/facebook.png" alt="facebook">
-                </a>  
-                <a href="#" target="_blank">
-                     <img class="social-item" src="./assets/icons/instagram.png" alt="instagram">
-                </a> 
-                <a href="#" target="_blank">
-                     <img class="social-item" src="./assets/icons/twitter.png" alt="twitter"> 
-          </a> -->
-              <a
-                href="https://www.linkedin.com/company/logis-technology/"
-                target="_blank"
-              >
-                <img
-                  class="social-item"
-                  src="./assets/icons/linkedin.png"
-                  alt="linkedin"
-                />
-              </a>
-            </span>
-                </div>
-
-                <!-- <p class="footer-link">+20-03-5869930</p> -->
+                </a>
+                        <a href="#" target="_blank">
+                            <img class="social-item" src="./assets/icons/instagram.png" alt="instagram">
+                        </a>
+                        <a href="#" target="_blank">
+                            <img class="social-item" src="./assets/icons/twitter.png" alt="twitter">
+                        </a> -->
+                        <a href="https://www.linkedin.com/company/logis-technology/" target="_blank">
+                            <img class="social-item" src="./assets/icons/linkedin.png" alt="linkedin" />
+                        </a>
+                        </span>
             </div>
+
+            <!-- <p class="footer-link">+20-03-5869930</p> -->
         </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <!-- link js file -->
-    <script src="./assets/js/javascript.js"></script>
+        <!-- link js file -->
+        <script src="./assets/js/main.js" type="module"></script>
 </body>
 
 </html>
